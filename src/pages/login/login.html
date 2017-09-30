@@ -1,0 +1,82 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+  <div class="flb">
+    <div class="Aligner-item Aligner-item--top"></div>
+    <img src="https://i.imgur.com/x0Lrd5Z.png">
+    <!--<img src="../assets/img/logo.png"> -->
+    <div class="Aligner-item Aligner-item--bottom"></div>
+  </div>
+</div>
+
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Iniciar sesión</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+<!--
+  <ion-item>
+    <ion-label floating>Correo electrónico</ion-label>
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+  </ion-item> 
+  <ion-item>
+      <ion-label floating>Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+  <div style="width:800px; margin:0 auto;">
+    <button ion-button color="secondary" round (click)="login(user)" >Iniciar sesión <ion-icon name="log-in"></ion-icon></button>
+    <button id="piano" ion-button round (click)="register()">Registrarse</button>    
+  </div>
+-->
+
+
+<form [formGroup]="myForm" (ngSubmit)="loginUser()">
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Correo electrónico:</ion-label>
+      <ion-input formControlName="email" type="text" [(ngModel)]="usuarioTest"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="myForm.get('email').errors && myForm.get('email').dirty">
+      <p color="danger" ion-text *ngIf="myForm.get('email').hasError('required')">Campo requerido</p>
+      <p color="danger" ion-text *ngIf="myForm.get('email').hasError('email')">No es un correo electrónico</p>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Contraseña:</ion-label>
+      <ion-input formControlName="password" type="password" [(ngModel)]="passwordTest"></ion-input>
+    </ion-item>
+    <ion-item *ngIf="myForm.get('password').errors && myForm.get('password').dirty">
+      <p color="danger" ion-text *ngIf="myForm.get('password').hasError('required')">Campo requerido</p>
+      <p color="danger" ion-text *ngIf="myForm.get('password').hasError('minlength')">Mínimo 6 caracteres</p>
+      <p color="danger" ion-text *ngIf="myForm.get('password').hasError('maxlength')">Maximo 10 caracteres</p>
+    </ion-item>
+  </ion-list>
+  <div padding text-center>
+    <button ion-button id="iniciarSesion" round type="submit" [disabled]="!myForm.valid">Iniciar sesión <ion-icon name="log-in"></ion-icon></button> 
+  </div>
+</form>
+
+<div padding text-center>
+  <button ion-button id="registrarse" round (click)="register()">Registrarse</button>    
+</div>
+
+<div padding text-center>
+  <button ion-button id="test" round (click)="test()">Test usuario</button>
+</div>
+
+
+
+<ion-list style="width:100%; margin: 0 auto; border-radius: 25px; color:black; font-weight: bold">
+  <ion-item style="width:90%; margin: 0 auto; border-radius: 25px; color:black; font-weight: bold">
+    <ion-label>Seleccionar Usuario</ion-label>
+    <ion-select  style="width:50%; margin: 0 auto; border-radius: 25px; color:black; font-weight: bold"  name="firstField" [(ngModel)]="selectedUser" (ionChange)="SeleccionarUsuario()">
+      <ion-option value="usuario">Usuario</ion-option>
+      <ion-option value="admin">Administrador</ion-option>
+      <ion-option value="invitado">Invitado</ion-option>
+      <ion-option value="jugador1">Jugador 1</ion-option>
+      <ion-option value="jugador2">Jugador 2</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+
+</ion-content>

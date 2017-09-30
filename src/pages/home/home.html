@@ -1,17 +1,42 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Inicio</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+  <ion-item>
+  <div>
+  <h2>¡Bienvenido a mi aplicación!</h2>
+</div>
+<div>
   <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
+    Esto es un piano temático
+
+    Acordate que si saltan errores tiene que vibrar el celular. ¡Sacale el silencio!
   </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+</div>
+</ion-item>
+    <button ion-button color="danger" round (click)="confirmarCerrarSesion()">Cerrar sesión <ion-icon name="log-out"> </ion-icon></button>
+
+</ion-content> -->
+
+<ion-header class="bar bar-header bar-positive">
+  <ion-navbar>
+    <ion-select [(ngModel)]="tematica">
+      <ion-option value="">Tematica</ion-option>
+      <ion-option value="autos">Autos</ion-option>
+      <ion-option value="animales">Animales</ion-option>
+      <ion-option value="frases">Frases</ion-option>
+    </ion-select>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <button ion-button class="tecla" danger block (click)="tecla1()">Tecla 1</button>
+  <button ion-button class="tecla" danger block (click)="tecla2()">aasd</button>
+  <button ion-button class="tecla" danger block (click)="tecla3()">asdasd</button>
+  <button ion-button class="tecla" danger block (click)="tecla4()">asdas</button>
+  <button ion-button class="tecla" danger block (click)="tecla5()">asdas</button>
+  <button ion-button color="danger" round (click)="confirmarCerrarSesion()">Cerrar sesión <ion-icon name="log-out"> </ion-icon></button>
 </ion-content>
