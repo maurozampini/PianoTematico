@@ -15,7 +15,7 @@ import { MediaPlugin } from 'ionic-native';
 export class HomePage {
 
 //variables
-  tematica: string = "";
+  tematica: string = "autos";
   file: MediaPlugin = null;
 
 //constructor
@@ -55,10 +55,10 @@ export class HomePage {
     console.log(this.tematica);
     const onStatusUpdate = (status) => console.log(status);
     if('autos' == this.tematica) {
-      const sound =  new MediaPlugin('file:///android_asset/www/assets/sounds/auto1.mp3', onStatusUpdate);
+      const sound =  new MediaPlugin('/android_asset/www/assets/sounds/auto1.mp3', onStatusUpdate);
       this.playSound(sound);
     } else if('animales' == this.tematica) {
-      const sound =  new MediaPlugin('file:///android_asset/www/assets/sounds/animal1.mp3', onStatusUpdate);
+      const sound =  new MediaPlugin('/android_asset/www/assets/sounds/animal1.mp3', onStatusUpdate);
       this.playSound(sound);
     } else if('frases' == this.tematica) {
       const sound =  new MediaPlugin('/android_asset/www/assets/sounds/frase1.mp3', onStatusUpdate);
@@ -84,6 +84,9 @@ export class HomePage {
   
 
     playSound(sound) {
+      if (sound.media) {
+        sound.stop();
+      }
       sound.play();
       setTimeout(() => {
         sound.stop();
@@ -93,13 +96,13 @@ export class HomePage {
     tecla2() {
       const onStatusUpdate = (status) => console.log(status);
       if('autos' == this.tematica) {
-        const sound =  new MediaPlugin('file:///android_asset/www/assets/sounds/auto2.mp3', onStatusUpdate);
+        const sound =  new MediaPlugin('/android_asset/www/assets/sounds/auto2.mp3', onStatusUpdate);
         this.playSound(sound);
       } else if('animales' == this.tematica) {
-        const sound =  new MediaPlugin('file:///android_asset/www/assets/sounds/animal2.mp3', onStatusUpdate);
+        const sound =  new MediaPlugin('/android_asset/www/assets/sounds/animal2.mp3', onStatusUpdate);
         this.playSound(sound);
       } else if('frases' == this.tematica) {
-        const sound =  new MediaPlugin('file:///android_asset/www/assets/sounds/frase2.mp3', onStatusUpdate);
+        const sound =  new MediaPlugin('/android_asset/www/assets/sounds/frase2.mp3', onStatusUpdate);
         this.playSound(sound);
       }
     }
@@ -107,13 +110,13 @@ export class HomePage {
     tecla3() {
       const onStatusUpdate = (status) => console.log(status);
       if('autos' == this.tematica) {
-        const sound =  new MediaPlugin('file:///android_asset/www/assets/sounds/auto3.mp3', onStatusUpdate);
+        const sound =  new MediaPlugin('/android_asset/www/assets/sounds/auto3.mp3', onStatusUpdate);
         this.playSound(sound);
       } else if('animales' == this.tematica) {
-        const sound =  new MediaPlugin('file:///android_asset/www/assets/sounds/animal3.mp3', onStatusUpdate);
+        const sound =  new MediaPlugin('/android_asset/www/assets/sounds/animal3.mp3', onStatusUpdate);
         this.playSound(sound);
       } else if('frases' == this.tematica) {
-        const sound =  new MediaPlugin('file:///android_asset/www/assets/sounds/frase3.mp3', onStatusUpdate);
+        const sound =  new MediaPlugin('/android_asset/www/assets/sounds/frase3.mp3', onStatusUpdate);
         this.playSound(sound);
       }
     }
@@ -121,13 +124,13 @@ export class HomePage {
     tecla4() {
       const onStatusUpdate = (status) => console.log(status);
       if('autos' == this.tematica) {
-        const sound =  new MediaPlugin('file:///android_asset/www/assets/sounds/auto4.mp3', onStatusUpdate);
+        const sound =  new MediaPlugin('/android_asset/www/assets/sounds/auto4.mp3', onStatusUpdate);
         this.playSound(sound);
       } else if('animales' == this.tematica) {
-        const sound =  new MediaPlugin('file:///android_asset/www/assets/sounds/animal4.mp3', onStatusUpdate);
+        const sound =  new MediaPlugin('/android_asset/www/assets/sounds/animal4.mp3', onStatusUpdate);
         this.playSound(sound);
       } else if('frases' == this.tematica) {
-        const sound =  new MediaPlugin('file:///android_asset/www/assets/sounds/frase4.mp3', onStatusUpdate);
+        const sound =  new MediaPlugin('/android_asset/www/assets/sounds/frase4.mp3', onStatusUpdate);
         this.playSound(sound);
       }
     }
@@ -135,13 +138,13 @@ export class HomePage {
     tecla5() {
       const onStatusUpdate = (status) => console.log(status);
       if('autos' == this.tematica) {
-        const sound =  new MediaPlugin('file:///android_asset/www/assets/sounds/auto5.mp3', onStatusUpdate);
+        const sound =  new MediaPlugin('/android_asset/www/assets/sounds/auto5.mp3', onStatusUpdate);
         this.playSound(sound);
       } else if('animales' == this.tematica) {
-        const sound =  new MediaPlugin('file:///android_asset/www/assets/sounds/animal5.mp3', onStatusUpdate);
+        const sound =  new MediaPlugin('/android_asset/www/assets/sounds/animal5.mp3', onStatusUpdate);
         this.playSound(sound);
       } else if('frases' == this.tematica) {
-        const sound =  new MediaPlugin('file:///android_asset/www/assets/sounds/frase5.mp3', onStatusUpdate);
+        const sound =  new MediaPlugin('/android_asset/www/assets/sounds/frase5.mp3', onStatusUpdate);
         this.playSound(sound);
       }
     }

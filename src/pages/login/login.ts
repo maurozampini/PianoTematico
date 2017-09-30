@@ -100,12 +100,12 @@ SeleccionarUsuario(){
   switch(this.selectedUser){
     case "admin":{
       this.usuarioTest="admin@admin.com";
-      this.passwordTest="111111";
+      this.passwordTest="222222";
       break;
     }
     case "usuario":{
       this.usuarioTest="usuario@usuario.com";
-      this.passwordTest="222222";
+      this.passwordTest="111111";
       break;
     }
     case "invitado":{

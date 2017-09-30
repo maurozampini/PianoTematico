@@ -1,23 +1,83 @@
 ion-content{
-    //background-image: url("../assets/img/pianitos.png");
     background-image: url("../assets/img/notas.jpg");
 }
 
 page-home {
     .tecla {
         background-color: white;
-        height: 19%;
+        height: 15%;
+        margin: 0px;
     }
 
     .button-md:hover:not(.disable-hover) {
         background-color: white;
     }
 
+    .tecla1autos {
+        background: url("../assets/img/auto1.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
+    .tecla2autos {
+        background: url("../assets/img/auto2.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
+    .tecla3autos {
+        background: url("../assets/img/auto3.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
+    .tecla4autos {
+        background: url("../assets/img/auto4.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
+    .tecla5autos {
+        background: url("../assets/img/camion.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
+    .tecla1animales {
+        background: url("../assets/img/pajaro.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
+    .tecla2animales {
+        background: url("../assets/img/gato.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
+    .tecla3animales {
+        background: url("../assets/img/vaca.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
+    .tecla4animales {
+        background: url("../assets/img/perro.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
+    .tecla5animales {
+        background: url("../assets/img/piano.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
+    .tecla1frases {
+        background: url("../assets/img/ricky1.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
+    .tecla2frases {
+        background: url("../assets/img/ricky1.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
+    .tecla3frases {
+        background: url("../assets/img/homero.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
+    .tecla4frases {
+        background: url("../assets/img/homero.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
+    .tecla5frases {
+        background: url("../assets/img/homero.jpg") no-repeat; width: 360px; height: 80px;
+        margin: 0px;
+    }
 }
 
 .ToastWarning{
     > div{
       background-color:#FF0015!important;
       text-align: center;
-  }
-  }
+    }
+}
