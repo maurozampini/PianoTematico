@@ -65,37 +65,6 @@ export class LoginPage {
 
 
 
-/*
-loginUser(){
-  console.log("Email:" + this.myForm.value.email);
-  console.log("Password:" + this.myForm.value.password);
-
-this.afAuth.auth.signInWithEmailAndPassword(this.myForm.value.email, this.myForm.value.password).then(() => {
-    console.log("User logging");
-    this.navCtrl.setRoot(HomePage);
-  }, (err) => {      
-    console.log(err.message);
-    this.loading.dismiss().then( () => {
-      let alert = this.alertCtrl.create({
-        message: err.message,
-        buttons: [
-          {
-            text: "Ok",
-            role: 'cancel'
-          }
-        ]
-      });
-      alert.present();
-    });
-  });
-
-  this.loading = this.loadingCtrl.create({
-    dismissOnPageChange: true,
-  });
-  this.loading.present();
-}
-*/
-
 SeleccionarUsuario(){
   switch(this.selectedUser){
     case "admin":{
@@ -172,10 +141,10 @@ SeleccionarUsuario(){
     this.loading.present();
   }
 
-  test() {
-    this.usuarioTest = "testusuario@test.com";
-    this.passwordTest = "123456";
-  }
+  // test() {
+  //   this.usuarioTest = "testusuario@test.com";
+  //   this.passwordTest = "123456";
+  // }
 
 
   camposIncompletosError() {

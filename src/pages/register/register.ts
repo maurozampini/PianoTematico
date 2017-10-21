@@ -133,6 +133,8 @@ camposIncompletosError() {
     showCloseButton: true,
     closeButtonText: 'Cerrar',
     position: 'bottom',
+    cssClass: "ToastWarning",
+    dismissOnPageChange: true,
     //title: 'Campos incompletos',
     //subTitle: 'Por favor, complete todos los campos',
     //buttons: ['Cerrar']
@@ -205,7 +207,7 @@ registroExitoso() {
     cssClass: "ToastAssert",
     showCloseButton: true,
     closeButtonText: "Cerrar",
-    dismissOnPageChange: true
+    //dismissOnPageChange: true
   });
 
   toast.onDidDismiss(() => {

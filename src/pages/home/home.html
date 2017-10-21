@@ -1,4 +1,4 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar color="secondary">
     <ion-title>Piano temático</ion-title>
   </ion-navbar>
@@ -6,22 +6,44 @@
     <ion-row>
     <label style="margin: auto; margin-left: 10px; font-size: 25px;">Tematica</label>
       <ion-select style="background-color: white; padding: 5px 5px 5px 10px; margin: 10px 10px 10px 10px;" [(ngModel)]="tematica">
-        <!-- <ion-option value="">Tematica</ion-option> -->
         <ion-option value="autos">Autos</ion-option>
         <ion-option value="animales">Animales</ion-option>
         <ion-option value="frases">Frases</ion-option>
       </ion-select>
     </ion-row>
     </ion-navbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content>
-  <button [ngClass]="{'tecla1autos': tematica == 'autos', 'tecla1animales': tematica == 'animales', 'tecla1frases': tematica == 'frases'}" ion-button danger block (click)="tecla1()"></button>
-  <button [ngClass]="{'tecla2autos': tematica == 'autos', 'tecla2animales': tematica == 'animales', 'tecla2frases': tematica == 'frases'}" ion-button danger block (click)="tecla2()"></button>
-  <button [ngClass]="{'tecla3autos': tematica == 'autos', 'tecla3animales': tematica == 'animales', 'tecla3frases': tematica == 'frases'}" ion-button danger block (click)="tecla3()"></button>
-  <button [ngClass]="{'tecla4autos': tematica == 'autos', 'tecla4animales': tematica == 'animales', 'tecla4frases': tematica == 'frases'}" ion-button danger block (click)="tecla4()"></button>
-  <button [ngClass]="{'tecla5autos': tematica == 'autos', 'tecla5animales': tematica == 'animales', 'tecla5frases': tematica == 'frases'}" ion-button danger block (click)="tecla5()"></button>
-  <div padding text-center>
+<ion-content class="contenedor">
+  <button id="tecla" [ngClass]="{'tecla1autos': tematica == 'autos', 'tecla1animales': tematica == 'animales', 'tecla1frases': tematica == 'frases'}" ion-button danger block (click)="tecla1()"></button>
+  <button id="tecla" [ngClass]="{'tecla2autos': tematica == 'autos', 'tecla2animales': tematica == 'animales', 'tecla2frases': tematica == 'frases'}" ion-button danger block (click)="tecla2()"></button>
+  <button id="tecla" [ngClass]="{'tecla3autos': tematica == 'autos', 'tecla3animales': tematica == 'animales', 'tecla3frases': tematica == 'frases'}" ion-button danger block (click)="tecla3()"></button>
+  <!-- <button id="tecla" [ngClass]="{'tecla4autos': tematica == 'autos', 'tecla4animales': tematica == 'animales', 'tecla4frases': tematica == 'frases'}" ion-button danger block (click)="tecla4()"></button>
+  <button id="tecla" [ngClass]="{'tecla5autos': tematica == 'autos', 'tecla5animales': tematica == 'animales', 'tecla5frases': tematica == 'frases'}" ion-button danger block (click)="tecla5()"></button> -->
+  <button id="tecla" class="microfono" ion-button danger block (click)="startRecording()"></button>
+  <button id="tecla" class="play" ion-button danger block (click)="play()"></button>
+  <!-- <div padding text-center>
     <button ion-button color="danger" padding text-center (click)="confirmarCerrarSesion()">Cerrar sesión <ion-icon name="log-out"> </ion-icon></button>
-  </div>
+  </div> -->
+<!-- 
+  <ion-fab right bottom>
+      <button ion-fab color="danger"><ion-icon name="add"></ion-icon></button>
+      <button button button-positive ion-button color="danger" class="desloguear" (click)="confirmarCerrarSesion()"> <ion-icon name="log-out"> </ion-icon></button>    
+  </ion-fab> -->
+
+
+
+
+  <!-- <div class="contenedor">
+    <button class="botonF1" (click)="b()">
+      <span>+</span> -->
+
+      <button class="botonF6" (click)="confirmarCerrarSesion()"> <ion-icon name="log-out"> </ion-icon></button> 
+      <ion-select class="botonF1" id="botonF1" [(ngModel)]="tematica">
+          <ion-option style="display:none" value="autos">Autos</ion-option>
+          <ion-option style="display:none" value="animales">Animales</ion-option>
+          <ion-option style="display:none" value="frases">F rases</ion-option>     
+        </ion-select>
+           
+
 </ion-content>

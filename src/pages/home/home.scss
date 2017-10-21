@@ -13,67 +13,118 @@ page-home {
         background-color: white;
     }
 
+    #tecla:active{
+        transform:scale(1.1);
+        transition: 0.5s;  
+      }
+
     .tecla1autos {
-        background: url("../assets/img/auto1.jpg") no-repeat; width: 360px; height: 80px;
+        background: url("../assets/img/auto1.jpg") no-repeat; max-width: 100%; max-height: 100%;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
     .tecla2autos {
         background: url("../assets/img/auto2.jpg") no-repeat; width: 360px; height: 80px;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
     .tecla3autos {
         background: url("../assets/img/auto3.jpg") no-repeat; width: 360px; height: 80px;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
     .tecla4autos {
-        background: url("../assets/img/auto4.jpg") no-repeat; width: 360px; height: 80px;
+        background: url("../assets/img/auto4.jpg") no-repeat;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
     .tecla5autos {
         background: url("../assets/img/camion.jpg") no-repeat; width: 360px; height: 80px;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
     .tecla1animales {
         background: url("../assets/img/pajaro.jpg") no-repeat; width: 360px; height: 80px;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
     .tecla2animales {
         background: url("../assets/img/gato.jpg") no-repeat; width: 360px; height: 80px;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
     .tecla3animales {
         background: url("../assets/img/vaca.jpg") no-repeat; width: 360px; height: 80px;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
     .tecla4animales {
         background: url("../assets/img/perro.jpg") no-repeat; width: 360px; height: 80px;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
     .tecla5animales {
-        background: url("../assets/img/piano.jpg") no-repeat; width: 360px; height: 80px;
+        background: url("../assets/img/rana.jpg") no-repeat; width: 360px; height: 80px;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
     .tecla1frases {
         background: url("../assets/img/ricky1.jpg") no-repeat; width: 360px; height: 80px;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
     .tecla2frases {
         background: url("../assets/img/ricky1.jpg") no-repeat; width: 360px; height: 80px;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
     .tecla3frases {
         background: url("../assets/img/homero.jpg") no-repeat; width: 360px; height: 80px;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
     .tecla4frases {
         background: url("../assets/img/homero.jpg") no-repeat; width: 360px; height: 80px;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
     .tecla5frases {
         background: url("../assets/img/homero.jpg") no-repeat; width: 360px; height: 80px;
         margin: 0px;
+        height: 20%;
+        transition: 0.5s;  
     }
 }
+
+.play{
+    background: url("../assets/img/play.jpg") no-repeat; width: 360px; height: 80px;
+    margin: 0px;
+    height: 20%;
+    transition: 0.5s; 
+}
+
+.microfono{
+    background: url("../assets/img/microfono.jpg") no-repeat; width: 360px; height: 80px;
+    margin: 0px;
+    height: 20%;
+    transition: 0.5s; 
+}
+
+
 
 .ToastWarning{
     > div{
@@ -81,3 +132,99 @@ page-home {
       text-align: center;
     }
 }
+
+
+
+.contenedor{
+    width: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+
+  .botonF1{
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    background:#F44336;
+    right:0;
+    bottom:0;
+    position:absolute;
+    margin-right:16px;
+    margin-bottom:16px;
+    border:none;
+    outline:none;
+    color:#FFF;
+    font-size:36px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:.3s;  
+  }
+  .botonF6{
+    width:60px;
+    height:60px;
+    border-radius:100%;
+    background:#F44336;
+    left:0;
+    bottom:0;
+    position:absolute;
+    margin-left:16px;
+    margin-bottom:16px;
+    border:none;
+    outline:none;
+    color:#FFF;
+    font-size:36px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    transition:.5s;  
+  }
+  .botonF6:active{
+    transform:scale(1.1);  
+  }
+  span{
+    transition:.5s;  
+  }
+  .botonF1:hover span{
+    transform:rotate(360deg);
+  }
+  .botonF1:active{
+    transform:scale(1.1);
+  }
+  .btn{
+    width:40px;
+    height:40px;
+    border-radius:100%;
+    border:none;
+    color:#FFF;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    font-size:28px;
+    outline:none;
+    position:absolute;
+    right:0;
+    bottom:0;
+    margin-right:26px;
+    transform:scale(0);
+  }
+  .botonF2{
+    background:#2196F3;
+    margin-bottom:85px;
+    transition:0.5s;
+  }
+  .botonF3{
+    background:#673AB7;
+    margin-bottom:130px;
+    transition:0.7s;
+  }
+  .botonF4{
+    background:#009688;
+    margin-bottom:175px;
+    transition:0.9s;
+  }
+  .botonF5{
+    background:#FF5722;
+    margin-bottom:220px;
+    transition:0.99s;
+  }
+  .botonF6{
+    transition:0.5s;
+  }
+  .animacionVer{
+    transform:scale(1);
+  }
