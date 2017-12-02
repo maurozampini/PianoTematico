@@ -14,21 +14,6 @@
   </ion-navbar>
 </ion-header>
 <ion-content padding>
-<!--
-  <ion-item>
-    <ion-label floating>Correo electrónico</ion-label>
-    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
-  </ion-item> 
-  <ion-item>
-      <ion-label floating>Contraseña</ion-label>
-      <ion-input type="password" [(ngModel)]="user.password"></ion-input>
-  </ion-item>
-  <div style="width:800px; margin:0 auto;">
-    <button ion-button color="secondary" round (click)="login(user)" >Iniciar sesión <ion-icon name="log-in"></ion-icon></button>
-    <button id="piano" ion-button round (click)="register()">Registrarse</button>    
-  </div>
--->
-
 
 <form [formGroup]="myForm" (ngSubmit)="loginUser()">
   <ion-list>
@@ -58,10 +43,6 @@
 <div padding text-center>
   <button ion-button id="registrarse" round (click)="register()">Registrarse</button>    
 </div>
-
-<!-- <div padding text-center>
-  <button ion-button id="test" round (click)="test()">Test usuario</button>
-</div> -->
 
 <ion-list style="width:100%; margin: 0 auto; border-radius: 25px; color:black; font-weight: bold">
   <ion-item style="width:90%; margin: 0 auto; border-radius: 25px; color:black; font-weight: bold">

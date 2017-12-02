@@ -7,12 +7,7 @@ import { ToastController } from 'ionic-angular';
 import { LoginPage } from '../login/login';
 import { AlertController } from 'ionic-angular';
 import { Vibration } from '@ionic-native/vibration';
-/**
- * Generated class for the RegisterPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage()
 @Component({
